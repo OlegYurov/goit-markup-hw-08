@@ -1,0 +1,45 @@
+.clients-section { 
+@extend %section;
+}
+
+.clients-title {
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: $primary-text-color;
+}
+
+.client-list {
+  @extend %list-style-none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list-link {
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-icon {
+  fill: #afb1b8;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+  border-color: $hover-color;
+}
+
+
+.client-list-link:hover .client-icon,
+.client-list-link:focus .client-icon {
+  fill: $hover-color;
+}
